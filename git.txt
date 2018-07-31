@@ -1,3 +1,21 @@
+# 菜鸟教程 Git 测试
+$ mkdir idea                                # 创建测试目录
+$ cd idea/                                  # 进入测试目录
+$ echo "# 菜鸟教程 Git 测试" >> git.txt     # 创建 git.txt 文件并写入内容
+$ ls                                        # 查看目录下的文件
+git.txt
+$ git init                                  # 初始化
+$ git add git.txt                           # 添加文件
+$ git commit -m "添加 git.txt 文件"         # 提交并备注信息
+[master (root-commit) 0205aab] 添加 git.txt 文件
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git.txt
+
+# 提交到 Github
+$ git remote add idea git@github.com:qkyy521314/idea.git
+$ git push -u idea master
+
+
 ##远程连接github仓库：
  git remote add 仓库名 git@github.com:qkyy521314/仓库名.git
 
